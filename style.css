@@ -4,7 +4,6 @@ body {
     background-color: #fff9fb;
     color: #333;
     overflow-x: hidden;
-    text-align: center; /* Centra todo el contenido */
 }
 
 header {
@@ -17,9 +16,8 @@ header h1 { color: #d63384; margin: 0; font-size: 2rem; }
 
 .carousel-container {
     position: relative;
-    max-width: 400px; /* Ancho máximo para el cuadrado */
-    width: 90%;      /* Ajuste para pantallas pequeñas */
-    margin: 30px auto;
+    max-width: 400px; /* Tamaño ideal para móvil */
+    margin: 20px auto;
     overflow: hidden;
     border-radius: 20px;
     box-shadow: 0 10px 25px rgba(214, 51, 132, 0.15);
@@ -32,8 +30,7 @@ header h1 { color: #d63384; margin: 0; font-size: 2rem; }
 
 .carousel-slide img {
     width: 100%;
-    aspect-ratio: 1 / 1; /* FUERZA EL FORMATO CUADRADO 1:1 */
-    object-fit: cover;   /* RELLENA EL CUADRADO SIN ESTIRAR LA IMAGEN */
+    object-fit: cover;
     display: block;
 }
 
@@ -41,21 +38,19 @@ header h1 { color: #d63384; margin: 0; font-size: 2rem; }
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.8);
     border: none;
-    padding: 15px;
+    padding: 12px;
     cursor: pointer;
     border-radius: 50%;
     color: #d63384;
     font-weight: bold;
-    z-index: 10;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 #prevBtn { left: 10px; }
 #nextBtn { right: 10px; }
 
-.info-negocio { padding: 20px; }
+.info-negocio { padding: 30px; }
 
 .btn-whatsapp {
     display: inline-block;
@@ -68,7 +63,6 @@ header h1 { color: #d63384; margin: 0; font-size: 2rem; }
     font-size: 1.1rem;
     box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
     transition: 0.3s;
-    margin-top: 10px;
 }
 
 .btn-whatsapp:active { transform: scale(0.95); }
