@@ -1,0 +1,68 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    background-color: #fff9fb;
+    color: #333;
+    overflow-x: hidden;
+}
+
+header {
+    padding: 30px 10px;
+    background-color: #fff;
+    border-bottom: 2px solid #fce4ec;
+}
+
+header h1 { color: #d63384; margin: 0; font-size: 2rem; }
+
+.carousel-container {
+    position: relative;
+    max-width: 400px; /* Tamaño ideal para móvil */
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(214, 51, 132, 0.15);
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.4s ease-out;
+}
+
+.carousel-slide img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 50%;
+    color: #d63384;
+    font-weight: bold;
+}
+
+#prevBtn { left: 10px; }
+#nextBtn { right: 10px; }
+
+.info-negocio { padding: 30px; }
+
+.btn-whatsapp {
+    display: inline-block;
+    padding: 18px 35px;
+    background-color: #25d366;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
+    transition: 0.3s;
+}
+
+.btn-whatsapp:active { transform: scale(0.95); }
